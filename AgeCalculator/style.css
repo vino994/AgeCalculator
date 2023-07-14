@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color:#f0e9e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.main{
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 20px;
+    border-bottom-right-radius: 30%;
+}
+.inputBox{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+}
+.inputBox .single-input{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:30px;
+}
+.inputBox .single-input label{
+    font-size: 1.2em;
+    padding-bottom: 5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.inputBox .single-input input{
+    width: 140px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid grey;
+}
+.button_sec{
+    display: flex;
+    position: relative;
+    height: 28px;
+}
+.line{
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+.button_sec button{
+    padding: 25px;
+    background-color: hsl(259,100%,60%);
+    cursor: pointer;
+    position: absolute;
+    right:0;
+    border-radius:50%;
+}
+.result_view{
+    padding-top: 20px;
+    font-size: 80px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+.result_view span{
+    color: hsl(259,100%,60%);
+}
+.line_sec{
+    position: absolute;
+    right: 10%;
+     margin-top: 8px;
+     letter-spacing: 3px;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     animation:move 2s linear infinite;
+}
+@keyframes move {
+    0%{
+        transform: translateX(-10px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
